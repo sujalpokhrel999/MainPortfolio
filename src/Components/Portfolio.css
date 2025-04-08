@@ -1,0 +1,117 @@
+/* General Portfolio Container */
+.portfolio-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.portfolio-content {
+  padding-top: 50px;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-description {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 3rem;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Project Card */
+.project-card {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-links img {
+  width: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-links img:hover {
+  transform: scale(1.1);
+}
+
+.project-description {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* Tags and Status */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  color: #4a5568;
+  display: inline-block;
+}
+
+.status-container {
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+/* Transition Effects */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

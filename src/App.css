@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: "Neology";
+  src: url("../public/font/Neology/Neology.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neology",sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Wrapper {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+body {
+  box-sizing: border-box;
+    position: relative;
+    line-height: 1.5;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Source Sans Pro', sans-serif;
+  overflow-y: scroll; /* Enable scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
 }
 
-.App-link {
-  color: #61dafb;
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+

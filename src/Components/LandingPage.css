@@ -1,0 +1,112 @@
+.SocialLinks{
+    position: absolute;
+  
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    left: 1px;
+}
+
+
+.socialLink{
+    width: 60px;
+}
+
+.medialink{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: background .3s;
+    border-radius: 5px;
+}
+
+.medialink:hover{
+    background: rgb(218, 217, 217);
+}
+.SocialLinks img{
+   width: 100%;
+}
+
+.landingPage{
+    position: relative;
+    background: linear-gradient(45deg, rgba(107, 105, 105, 0.8), rgba(245,245,245,0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/bg.png);
+    margin-top: 0;
+    overflow: hidden;
+  }
+  
+  .hero-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar-frame{
+    height: 80px;
+    width: 80px;
+    background-color: lightblue;
+    border: 0;
+    border-radius: 50%;
+  }
+  
+  .Welcome{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  
+  .heroHeader{
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .heroHeader h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+  }
+  
+  .heroSubHeader{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    width: 70%;
+    line-height: 1.6;
+  }
+  
+  .Connect{
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 18px;
+    border: 0;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #0d0e10;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .Connect:hover{
+      transform: translateY(-10px);
+  }
