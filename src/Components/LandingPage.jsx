@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 function LandingPage({ onNavigate }) {
     const text = "Hey, I'm Sujal Pokhrel";
-    
+
     // Enhanced text animation with floating effect
     const letterVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -32,7 +32,7 @@ function LandingPage({ onNavigate }) {
             animate="visible"
             style={{ display: 'inline-block' }}
         >
-             {letter === " " ? "\u00A0" : letter}
+            {letter === " " ? "\u00A0" : letter}
         </motion.span>
     ));
 
@@ -110,7 +110,7 @@ function LandingPage({ onNavigate }) {
     };
 
     return (
-        <motion.div 
+        <motion.div
             className="landingPage"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -123,7 +123,7 @@ function LandingPage({ onNavigate }) {
                     </h1>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="heroSubHeader"
                     variants={subtitleVariants}
                     initial="hidden"
@@ -134,26 +134,26 @@ function LandingPage({ onNavigate }) {
                     </h2>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="SocialLinks"
                     variants={socialLinksContainer}
                     initial="hidden"
                     animate="visible"
                 >
                     {[
-                        { icon: linkedin, alt: "LinkedIn",link:"https://www.linkedin.com/in/sujal-pokhrel-8431761b2/" },
-                        { icon: twitter, alt: "Twitter",link:"https://x.com/sujal22245172" },
-                        { icon: facebook, alt: "Facebook",link:"https://www.facebook.com/sujal.pokhrel.75" },
-                        { icon: github, alt: "GitHub",link:"https://github.com/sujalpokhrel999" }
+                        { icon: linkedin, alt: "LinkedIn", link: "https://www.linkedin.com/in/sujal-pokhrel-8431761b2/" },
+                        { icon: twitter, alt: "Twitter", link: "https://x.com/sujal22245172" },
+                        { icon: facebook, alt: "Facebook", link: "https://www.facebook.com/sujal.pokhrel.75" },
+                        { icon: github, alt: "GitHub", link: "https://github.com/sujalpokhrel999" }
                     ].map((social, index) => (
-                        <motion.div 
-                            key={index} 
+                        <motion.div
+                            key={index}
                             className="socialLink"
                             variants={socialLinkItem}
                             whileHover="hover"
                         >
-                            <motion.a 
-                                href={social.link} 
+                            <motion.a
+                                href={social.link}
                                 className='medialink'
                                 target="_blank"
                                 whileHover={{
@@ -161,8 +161,8 @@ function LandingPage({ onNavigate }) {
                                     transition: { duration: 0.2 }
                                 }}
                             >
-                                <motion.img 
-                                    src={social.icon} 
+                                <motion.img
+                                    src={social.icon}
                                     alt={social.alt}
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ duration: 0.2 }}
@@ -171,6 +171,7 @@ function LandingPage({ onNavigate }) {
                         </motion.div>
                     ))}
                 </motion.div>
+                <div class="mainButtons">
 
                 <motion.button
                     className="Connect"
@@ -184,6 +185,27 @@ function LandingPage({ onNavigate }) {
                 >
                     SEE MY WORKS
                 </motion.button>
+                <motion.button
+  className="Connect cv-button"
+  variants={buttonVariants}
+  initial="hidden"
+  animate="visible"
+  whileHover="hover"
+  whileTap="tap"
+  onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/Sujal.pdf'; // Update this path
+    link.download = 'Sujal_CV.pdf'; // Optional: set desired filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  My CV
+</motion.button>
+
+                </div>
+
             </div>
         </motion.div>
     );
