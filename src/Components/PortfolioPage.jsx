@@ -28,9 +28,16 @@ const projects = [
   {
     title: "Real-Time Chat Application",
     description: "A modern chat application built with React and WebSocket technology for real-time communication.",
-    status: "In Development",
-    tags: ["React", "WebSocket", "Node.js"],
-    github: "https://github.com/sujalpokhrel999/Chat-App",
+    tags: ["React", "Routing", "Firebase"],
+    github: "https://github.com/sujalpokhrel999/Connectify",
+    live: "https://connectify-drab.vercel.app"
+  },
+  {
+    title: "QuickBook",
+    description: "Movie ticket book demo site for current and upcoming movies.",
+    status:"In Development",
+    tags: ["React", "API Integration", "Supabase"],
+    github: "https://github.com/sujalpokhrel999/QuickBook",
     live: false
   },
   {
